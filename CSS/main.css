@@ -1,0 +1,262 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,:hover,:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color:bisque;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-weight: 400;
+}
+.wrapper{
+    padding-top: 5.25rem;
+    padding-bottom: 5.25rem;
+}
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+.navigation-wrap{
+    
+    position: -webkit-sticky;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+.navigation-wrap.scroll-on{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.9);
+    transition: all .15 ease-in-out 0s;
+}
+.top-banner{
+    background: url('../Img/Messibackground.jpg')no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.nav-link:hover{
+    color:black;
+}
+.nav-link{
+    color: bisque;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+.justify{
+    text-align: justify;
+  }
+.counter-section{
+    background-color:bisque;
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: darkblue;
+    text-transform: none ;
+}
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: grey;
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li ::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: red;
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content:'\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.story-section{
+    width: 100%;
+    height: 25.125rem;
+    background: url('../Img/Messi_About.jpg')no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+.story-section h2{
+    color:white;
+} 
+
+/* .explore-achievements{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+.explore-achievements .card img{
+    border:none;
+    border-radius: 0.9375rem;
+    object-fit: cover;
+} */
+
+.clubs-section{
+    background-color:bisque;
+}
+.clubs-section .carousel-item{
+    margin-top: 3rem;
+    padding: 4rem 3.125rem;
+    background-color: white;
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+.clubs-section .carousel-caption img{
+    /* max-width: 5rem; */
+    color: white;
+    /* padding: 0.3125rem; */
+}
+.clubs-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    color: white;
+    /* padding: 0 11% 0.625rem; */
+}
+.clubs-section .carousel-item .carousel-caption h5{
+    color: white;
+}
+.clubs-section  .carousel-indicators{
+    bottom: -2.8125rem;
+}
+.clubs-section .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none ;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+.clubs-section .carousel-indicators button.active{
+    opacity: 1;
+}
+.faq h4 span{
+    color: red;
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+.gallery-section{
+    background-color: bisque;
+}
+.quote{
+    width: 100%;
+    background: url('../Img/img5.jpg')no-repeat center;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+.quote h2{
+    color: white;
+}
+
+.contact{
+    width:65%;
+    margin: 0 auto;
+}
+.contact .form-control{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1875rem solid grey;
+    color: black;
+    font-weight: 700;
+}
+.contact .form-control:hover,
+.contact .form-control:focus 
+{
+    outline: noone;
+    box-shadow: none;
+    border-color: black;
+}
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: red;
+    border: 0.1875rem solid red;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.gallery-section img {
+      
+      
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-section img:hover {
+    transform: scale(1.05);
+  }
+
+      /* Custom CSS for Navbar */
+      .navbar.scrolled {
+        background-color: white !important;
+        transition: background-color 0.3s ease-in-out;
+      }
+    
+      /* Adjust padding for smoother transition */
+      .navbar.scrolled .nav-link {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
